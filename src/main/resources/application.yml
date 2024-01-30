@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: "Azure Service Bus Test"
+
+cloud:
+  azure:
+    servicebus:
+      namespace: ddtm-topic-test
+      consumer:
+        test-topic2:
+          connectionString: Endpoint=sb://ddtm-topic-test.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=4zySqLGf0MH/e0R/hFMyoL32wS+hDuFoL+ASbNJU094=
+          maxConcurrentCalls: 5
+      producer:
+        test-topic2:
+          connectionString: Endpoint=sb://ddtm-topic-test.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=4zySqLGf0MH/e0R/hFMyoL32wS+hDuFoL+ASbNJU094=
