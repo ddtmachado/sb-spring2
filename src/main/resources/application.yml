@@ -8,8 +8,8 @@ cloud:
       namespace: ddtm-topic-test
       consumer:
         test-topic2:
-          connectionString: Endpoint=sb://ddtm-topic-test.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=4zySqLGf0MH/e0R/hFMyoL32wS+hDuFoL+ASbNJU094=
+          connectionString: ${CONNECTION_STRING}
           maxConcurrentCalls: 5
       producer:
         test-topic2:
-          connectionString: Endpoint=sb://ddtm-topic-test.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=4zySqLGf0MH/e0R/hFMyoL32wS+hDuFoL+ASbNJU094=
+          connectionString: ${CONNECTION_STRING}
